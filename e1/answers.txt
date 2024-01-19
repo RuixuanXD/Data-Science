@@ -1,0 +1,11 @@
+Q1 Where you did the same calculations with NumPy and Pandas, which did you find easier to work with? Which code do you think is easier to read?
+
+For the first three parts, I think the difficulty of the code parts of numpy and pandas are similar. But numpy's reshape function can better reshape the format I want, while pandas only has pivot and melt functions to reshape the data. So I think while pandas' data tables are easier to navigate, numpy's code is more free.
+
+
+
+Q2 What were the running times of the two pivot_months_* functions? How can you explain the difference?
+
+pivot_months_pandas: 5.42 ms ± 159 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+pivor_months_loops: 103 ms ± 376 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+I learned that pandas is built on top of numpy, which is written in c and is highly optimized for performance. So the efficiency of python loops is not at all comparable to that of numpy, making the difference in time spent quite large.

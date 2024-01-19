@@ -1,0 +1,7 @@
+Q1 In the hint above, what is the result of the calculation data['timestamp']*fit.slope + fit.intercept? What is the type, and describe the values.
+
+The result of the calculation will be a series of values representing the predicted y-values on the best-fit line corresponding to the x-values from the timestamp column. The type of the result is float type, which is the same as timestamp's type.
+
+Q2 In the same hint, why does this produce a fit line on the graph? Why are the created_at values and timestamp values paired correctly to make points on the plot?
+
+Because created_at values and timestamp values are the same data but different types. The linear regression model estimates the best-fit line that represents the relationship between these two variables. The slope and intercept obtained from the linear regression model are then used to calculate the predicted y-values for each timestamp value.

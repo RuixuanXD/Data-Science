@@ -1,0 +1,7 @@
+Q1 When smoothing the CPU temperature, do you think you got a better result with LOESS or Kalman smoothing? What differences did you notice?
+
+In the CPU temperature variation data, I think Kalman filter is the better result because he can observe and predict the trend of the data based on time. The LOESS filter, on the other hand, is purely a smoothed curve derived from the statistics of the calculated data, which is not as realistic as the Kalman filter.
+
+Q2 In the CSV files, you might have also noticed other data about the observations: accelerometer (acceleration in x, y, z directions), gyroscope (rate of turning, pitch, roll, yaw). How could those have been used to make a better prediction about the “next” latitude and longitude?
+
+Accelerometer readings can provide information about the physical motion and acceleration of the device. This additional information can be combined into the Kalman filter as additional observations to be used as input to more sophisticated predictive models. Gyroscope readings, which can provide information about the orientation of the device in space. By accurately estimating the orientation, the predicted direction of motion can be aligned with the actual physical motion, improving the prediction of latitude and longitude.
