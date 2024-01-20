@@ -1,0 +1,7 @@
+1. log() is the one that got me the closest to satisfying the assumptions of a T-test.
+
+2. If we could reject the null hypothesis in the original T-test and the transformed data T-test, we can conclude that there are a different number of comments on weekdays compared to weekends. 
+
+3. I think fix 2 (Central Limit Theorem) actually does a better job, because it passed the normality test and equality of variances test. Thus, we can apply the T-test to it and get a reliable p-value. 
+
+4. More Reddit comments in /r/ canada are posted on weekdays. 

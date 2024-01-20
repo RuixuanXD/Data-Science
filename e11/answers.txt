@@ -1,0 +1,16 @@
+Q1 In your reddit_relative.py, what intermediate results did you .cache()? Briefly describe what would have happened if you hadn't used .cache() anywhere. (No need to time it, unless you really want to.)
+
+I .cache() the average and max score of comment, using cache to temporarily store data allows the program to run faster without having to calculate the same steps over and over again.
+
+Q2 How did marking DataFrames for broadcast affect the running time of the “best author” program above?
+with hint():
+real	2m1.456s
+user	1m8.189s
+sys	0m4.961s
+
+without hint():
+real	2m50.680s
+user	1m12.717s
+sys	0m5.433s
+
+Using broadcast will run faster which improves "best author" program.

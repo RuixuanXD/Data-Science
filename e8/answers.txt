@@ -1,0 +1,8 @@
+Q1 Which model did the best for the colour-prediction task? Can you give a theory about why? Do you have any theory about why RGB/LAB/HSV worked better for different models?
+
+From this experiment and training, I think KNN is to be more accurate than Gaussian filtering and RF. I used 10 nearest neighbors, and I increased the n_estimators to 500 for RF, which is still not as good as KNN in terms of results.
+GaussianNB can benefit from RGB if the distribution of color values for different classes is well separated along the RGB axis. KNN may perform well in LAB if the distance between colors in LAB space is consistent with the perceived color differences. A random forest classifier can work better with HSV if the model can capture the complex relationships between hue, saturation, and value to make accurate color predictions.
+
+Q2 Have a look at the cities in your validation data where the weather model makes the wrong prediction. Do you feel like the model is making reasonable mistakes? Can you think of any weather features that we could potentially add to make better predictions?
+
+Yes, the model makes the classic confusion mistake. This is because the weather data for some cities are very similar. We can add the number of natural disasters specific to some cities to differentiate them.

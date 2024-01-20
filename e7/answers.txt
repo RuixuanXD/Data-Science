@@ -1,0 +1,7 @@
+Q1 Looking at your dog-rates.ipynb, do you think the residual are close-enough to being normal to look at the OLS p-value? Can you reasonably conclude that the ratings are increasing?
+
+p-value = 2.536058725135737e-127, and looking the histogram. I think it is closed enough to being normal and the ratings are increasing. 
+
+Q2 Do you think that the new “better” prediction is letting the Kalman filter do a better job capturing the true signal in the noise?
+
+Yes, I think the new prediction is letting the Kalman filter do a better job. Because we have more data on same time to capture the true signal. 

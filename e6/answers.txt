@@ -1,0 +1,11 @@
+In the A/B test analysis, do you feel like we're p-hacking? How comfortable are you coming to a conclusion at p < 0.05?
+
+I did not feel in p-hacking and we came up with only one p-value below 0.05. So we did not reject them.
+
+If we had done T-tests between each pair of sorting implementation results, how many tests would we run? If we looked for in them, what would the probability be of having any false conclusions, just by chance? That's the effective p-value of the many-T-tests analysis. [We could have done a Bonferroni correction when doing multiple T-tests, which is a fancy way of saying “for m tests, look for significance at alpha/m”.]
+
+We need to do 7*6/2 = 21 tests, and for m = 21, our p-value will be less than 0.05/21 = 0.0238.
+
+Give a ranking of the sorting implementations by speed, including which ones could not be distinguished. (i.e. which pairs could our experiment not conclude had different running times?)
+
+The rankings I got for the implementations sorted by speed are partition_sort, qs1, qs2, qs5, qs3, qs4 and merge1. Our experiments cannot conclude that pair (qs5, qs3) (qs3, qs4) has different running times.
